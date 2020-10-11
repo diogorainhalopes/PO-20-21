@@ -1,0 +1,68 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLClass</id><coordinates><x>395</x><y>350</y><w>210</w><h>150</h></coordinates><panel_attributes>Product
+--
+- &lt;&lt; final &gt;&gt;_key: String 
+-_price: int
+-_criticalValue: int
+-_stock: int
+-_...
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>925</x><y>280</y><w>210</w><h>140</h></coordinates><panel_attributes>Supplier
+--
+- &lt;&lt; final &gt;&gt;_key: String 
+-_name: String
+-_address: String
+-_...
+
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>610</x><y>60</y><w>210</w><h>60</h></coordinates><panel_attributes>Company
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>390</x><y>550</y><w>210</w><h>110</h></coordinates><panel_attributes>Book 
+--
+-_title: String
+-_author: String
+-_ISBN: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>540</y><w>210</w><h>80</h></coordinates><panel_attributes>Box
+--
+-_serviceLevel: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>410</y><w>160</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>160</x><y>660</y><w>210</w><h>80</h></coordinates><panel_attributes>Container
+--
+-_serviceQuality: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>250</x><y>610</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>70</y><w>210</w><h>190</h></coordinates><panel_attributes>Client
+--
+- &lt;&lt; final &gt;&gt;_key: String 
+-_name: String
+-_address: String
+-_status: String
+-_points: int
+-_...
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>790</x><y>490</y><w>210</w><h>80</h></coordinates><panel_attributes>Transaction
+--
+-_cost: int
+#_key: int
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>660</x><y>590</y><w>210</w><h>70</h></coordinates><panel_attributes>Order
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>900</x><y>590</y><w>210</w><h>70</h></coordinates><panel_attributes>Sale
+--
+-_dateLimit: int
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>520</y><w>80</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;10;10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>990</x><y>520</y><w>70</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;50;10;50;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>270</x><y>190</y><w>210</w><h>70</h></coordinates><panel_attributes>Notification
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>430</x><y>250</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>160</y><w>480</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>460;10;110;10;110;70;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>445</x><y>90</y><w>180</w><h>120</h></coordinates><panel_attributes>lt=&lt;.&gt;
+&lt;&lt;????????&gt;&gt;</panel_attributes><additional_attributes>10;100;10;10;160;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1140</x><y>460</y><w>210</w><h>70</h></coordinates><panel_attributes>Date
+--
++_time: int
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>995</x><y>490</y><w>160</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>380</y><w>340</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+*                                                                                       </panel_attributes><additional_attributes>320;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>230</x><y>60</y><w>400</w><h>350</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+</panel_attributes><additional_attributes>380;10;10;10;10;330;160;330</additional_attributes></element><element><id>Text</id><coordinates><x>370</x><y>370</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>
