@@ -26,6 +26,7 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>344</x><y>193</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>294</x><y>113</y><w>650</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10;630;10;630;170</additional_attributes></element><element><id>Text</id><coordinates><x>924</x><y>253</y><w>90</w><h>30</h></coordinates><panel_attributes>-_supplier
 style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>889</x><y>283</y><w>210</w><h>150</h></coordinates><panel_attributes>Product
 --
+# &lt;&lt; final &gt;&gt;_key: String 
 -_price: int
 -_criticalValue: int
 -_stock: int
@@ -59,7 +60,7 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>870</x><y>463</y><w>40</w><h>30</h></coordinates><panel_attributes>*
 style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>590</x><y>373</y><w>320</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>300;110;230;110;230;10;14;10</additional_attributes></element><element><id>Text</id><coordinates><x>610</x><y>353</y><w>60</w><h>30</h></coordinates><panel_attributes>-_boxes
 style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>870</x><y>603</y><w>40</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>940</x><y>803</y><w>320</w><h>270</h></coordinates><panel_attributes>TO DO:
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>830</x><y>743</y><w>320</w><h>270</h></coordinates><panel_attributes>TO DO:
 Associada a cada cliente existe ainda informação relativa às suas compras.
 
 Dado um cliente, é possível aceder ao historial das suas transacções.
@@ -83,7 +84,5 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>640</y><w>60</w><h>260</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;240;40;240;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>580</x><y>530</y><w>210</w><h>70</h></coordinates><panel_attributes>Notification
 --
 -_description: String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>590</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>450</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>620</x><y>250</y><w>190</w><h>60</h></coordinates><panel_attributes>/Product_ID/
---
-- &lt;&lt; final &gt;&gt;_key: String 
---</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>300</y><w>30</w><h>250</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;230</additional_attributes></element><element><id>Relation</id><coordinates><x>770</x><y>300</y><w>140</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60;120;60</additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>640</x><y>590</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>580</x><y>450</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>320</y><w>170</w><h>230</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;210</additional_attributes></element><element><id>Text</id><coordinates><x>680</x><y>500</y><w>100</w><h>30</h></coordinates><panel_attributes>-_product
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>
