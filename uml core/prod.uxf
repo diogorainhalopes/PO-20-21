@@ -1,0 +1,24 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>545</x><y>190</y><w>210</w><h>150</h></coordinates><panel_attributes>Product
+--
+- &lt;&lt; final &gt;&gt;_key: String 
+-_price: int
+-_criticalValue: int
+-_stock: int
+-_...
+
+--
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>390</y><w>210</w><h>110</h></coordinates><panel_attributes>Book 
+--
+-_title: String
+-_author: String
+-_ISBN: String
+--
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>380</y><w>210</w><h>80</h></coordinates><panel_attributes>Box
+--
+-_serviceLevel: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>310</x><y>500</y><w>210</w><h>80</h></coordinates><panel_attributes>Container
+--
+-_serviceQuality: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>450</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>630</x><y>330</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>400</x><y>250</y><w>160</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>140;10;10;10;10;130</additional_attributes></element><element><id>UMLClass</id><coordinates><x>930</x><y>220</y><w>100</w><h>30</h></coordinates><panel_attributes>Supplier</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>740</x><y>230</y><w>210</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>190;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>760</x><y>210</y><w>90</w><h>30</h></coordinates><panel_attributes>-_supplier
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>960</x><y>240</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>750</x><y>300</y><w>240</w><h>30</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;220;10</additional_attributes></element><element><id>Text</id><coordinates><x>760</x><y>280</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>970</x><y>260</y><w>80</w><h>30</h></coordinates><panel_attributes>-_products
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element></diagram>

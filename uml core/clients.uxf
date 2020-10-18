@@ -1,0 +1,10 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>400</x><y>210</y><w>210</w><h>190</h></coordinates><panel_attributes>Client
+--
+- &lt;&lt; final &gt;&gt;_key: String 
+-_name: String
+-_address: String
+-_status: String
+-_points: int
+-_...
+--
+</panel_attributes><additional_attributes></additional_attributes></element></diagram>
