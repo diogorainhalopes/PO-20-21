@@ -1,20 +1,21 @@
-<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>134</x><y>756</y><w>30</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;210;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>84</x><y>656</y><w>210</w><h>110</h></coordinates><panel_attributes>Order
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><help_text>Space for diagram notes</help_text><element><id>Relation</id><coordinates><x>50</x><y>671</y><w>30</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;240;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>601</y><w>210</w><h>80</h></coordinates><panel_attributes>Order
 --
--_amounts: int [ ]
---
-+addProd(prod: Product): void
-+addAmount(prod: Product): void
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>966</y><w>210</w><h>80</h></coordinates><panel_attributes>/Transaction/
+--
+
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>911</y><w>210</w><h>120</h></coordinates><panel_attributes>/Transaction/
 --
 - «final»_key: int
 -_cost: int
+-_amouts: int [ ]
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>204</x><y>816</y><w>160</w><h>80</h></coordinates><panel_attributes>Sale
++addProd(prod: Product): void
++addAmount(prod: Product): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>761</y><w>160</w><h>80</h></coordinates><panel_attributes>Sale
 --
 -_timeLimit: int
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>244</x><y>886</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>104</x><y>406</y><w>210</w><h>140</h></coordinates><panel_attributes>Supplier
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>831</y><w>30</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;80;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>351</y><w>210</w><h>140</h></coordinates><panel_attributes>Supplier
 --
 - &lt;&lt; final &gt;&gt;_key: String 
 -_name: String
@@ -23,7 +24,7 @@
 --
 +addProd(prod: product): void
 +addTransaction(order: Order): void
-+showAllTransactions(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>404</x><y>606</y><w>230</w><h>120</h></coordinates><panel_attributes>Store
++showAllTransactions(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>320</x><y>551</y><w>230</w><h>120</h></coordinates><panel_attributes>Store
 --
 _-serialVersionUID: long = 202009192006L_
 -_time: int
@@ -57,10 +58,10 @@ _-serialVersionUID: long = 202009192006L_
 +lookupPayments(clientKey: String): String
 +lookupLowerPrices(priceLimit: int): String
 
-+showBalance(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>304</x><y>496</y><w>230</w><h>130</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>210;110;210;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>274</x><y>376</y><w>30</w><h>30</h></coordinates><panel_attributes>1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>374</x><y>436</y><w>500</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>480;110;420;110;420;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>324</x><y>446</y><w>80</w><h>30</h></coordinates><panel_attributes>-_products
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>304</x><y>436</y><w>100</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;80;10</additional_attributes></element><element><id>Relation</id><coordinates><x>254</x><y>356</y><w>650</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10;630;10;630;170</additional_attributes></element><element><id>Text</id><coordinates><x>884</x><y>496</y><w>90</w><h>30</h></coordinates><panel_attributes>-_supplier
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>849</x><y>526</y><w>210</w><h>150</h></coordinates><panel_attributes>/Product/
++showBalance(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>190</x><y>321</y><w>30</w><h>30</h></coordinates><panel_attributes>1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>381</y><w>570</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>550;110;490;110;490;10;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>240</x><y>391</y><w>80</w><h>30</h></coordinates><panel_attributes>-_products
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>301</y><w>650</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;50;10;10;630;10;630;170</additional_attributes></element><element><id>Text</id><coordinates><x>800</x><y>441</y><w>90</w><h>30</h></coordinates><panel_attributes>-_supplier
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>765</x><y>471</y><w>210</w><h>150</h></coordinates><panel_attributes>/Product/
 --
 - &lt;&lt; final &gt;&gt;_key: String 
 -_price: int
@@ -69,20 +70,20 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 --
 +addStock(stock: int): void
 +raisePrice(price: int): void
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>944</x><y>666</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>854</x><y>706</y><w>210</w><h>80</h></coordinates><panel_attributes>Box
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>611</y><w>30</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>651</y><w>210</w><h>80</h></coordinates><panel_attributes>Box
 --
 -_serviceLevel: String
 --
 +raiseService(): void
-+lowerService(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1114</x><y>506</y><w>210</w><h>110</h></coordinates><panel_attributes>Book 
++lowerService(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1030</x><y>451</y><w>210</w><h>110</h></coordinates><panel_attributes>Book 
 --
 -_title: String
 -_author: String
 -_ISBN: String
 --
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>854</x><y>836</y><w>210</w><h>80</h></coordinates><panel_attributes>Container
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>770</x><y>781</y><w>210</w><h>80</h></coordinates><panel_attributes>Container
 --
--_serviceQuality: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>944</x><y>776</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>1054</x><y>566</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>430</x><y>936</y><w>210</w><h>160</h></coordinates><panel_attributes>Client
+-_serviceQuality: String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>860</x><y>721</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Relation</id><coordinates><x>970</x><y>511</y><w>80</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;60;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>346</x><y>881</y><w>210</w><h>190</h></coordinates><panel_attributes>Client
 --
 - &lt;&lt; final &gt;&gt;_key: String 
 -_name: String
@@ -92,25 +93,25 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 -_notification: boolean
 --
 +addTransaction(sale: Sale): void
-+showAllTransactions(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>310</x><y>516</y><w>200</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;180;10;180;90</additional_attributes></element><element><id>Text</id><coordinates><x>340</x><y>526</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>420</x><y>576</y><w>90</w><h>30</h></coordinates><panel_attributes>-_suppliers
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>676</y><w>30</w><h>160</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;140;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>260</x><y>606</y><w>160</w><h>60</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;40;10;10;140;10</additional_attributes></element><element><id>Relation</id><coordinates><x>700</x><y>606</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>620</x><y>696</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Text</id><coordinates><x>830</x><y>596</y><w>40</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>511</x><y>723</y><w>40</w><h>230</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>13;10;10;210</additional_attributes></element><element><id>Text</id><coordinates><x>824</x><y>526</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>74</x><y>606</y><w>70</w><h>30</h></coordinates><panel_attributes>-_supplier
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>134</x><y>556</y><w>30</w><h>30</h></coordinates><panel_attributes>1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>150</x><y>543</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Text</id><coordinates><x>1004</x><y>486</y><w>90</w><h>30</h></coordinates><panel_attributes>1, ...*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>20</x><y>333</y><w>990</w><h>390</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>60;363;10;360;10;10;970;10;970;190</additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>703</y><w>90</w><h>30</h></coordinates><panel_attributes>-_products 
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>643</y><w>840</w><h>540</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>14;250;10;520;410;520;410;300;820;300;820;10;740;10</additional_attributes></element><element><id>Text</id><coordinates><x>1060</x><y>663</y><w>90</w><h>30</h></coordinates><panel_attributes>1, ..., *
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>270</x><y>903</y><w>80</w><h>30</h></coordinates><panel_attributes>-_products
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>673</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>60;10;10;10;10;120</additional_attributes></element><element><id>UMLClass</id><coordinates><x>540</x><y>773</y><w>210</w><h>70</h></coordinates><panel_attributes>Notification
++showAllTransactions(): String
++pay(transactionKey: int): void
++toggleNotification(): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>226</x><y>461</y><w>200</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;180;10;180;90</additional_attributes></element><element><id>Text</id><coordinates><x>256</x><y>471</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>336</x><y>521</y><w>90</w><h>30</h></coordinates><panel_attributes>-_suppliers
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>616</x><y>551</y><w>170</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>150;10;10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>536</x><y>641</y><w>110</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>10;10;90;10</additional_attributes></element><element><id>Text</id><coordinates><x>736</x><y>531</y><w>40</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>740</x><y>471</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>0</x><y>571</y><w>70</w><h>30</h></coordinates><panel_attributes>-_supplier
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>50</x><y>501</y><w>30</w><h>30</h></coordinates><panel_attributes>1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>66</x><y>488</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Text</id><coordinates><x>1026</x><y>598</y><w>90</w><h>30</h></coordinates><panel_attributes>1, ..., *
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>106</x><y>1038</y><w>80</w><h>30</h></coordinates><panel_attributes>-_products
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>456</x><y>738</y><w>210</w><h>70</h></coordinates><panel_attributes>Notification
 --
 -_description: String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>600</x><y>833</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>Relation</id><coordinates><x>560</x><y>713</y><w>40</w><h>80</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;60;14;10</additional_attributes></element><element><id>Relation</id><coordinates><x>730</x><y>643</y><w>140</w><h>150</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>120;10;10;10;10;130</additional_attributes></element><element><id>Text</id><coordinates><x>660</x><y>743</y><w>70</w><h>30</h></coordinates><panel_attributes>-_product
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>480</x><y>513</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>14;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>713</y><w>40</w><h>150</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>14;10;10;130</additional_attributes></element><element><id>Relation</id><coordinates><x>470</x><y>766</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>480</x><y>906</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>633</y><w>250</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;13;140;10;140;150;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>170</x><y>773</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>310</x><y>643</y><w>100</w><h>40</h></coordinates><panel_attributes>-_transactions
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>190</x><y>926</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>420</x><y>736</y><w>70</w><h>30</h></coordinates><panel_attributes>-_clients
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>600</x><y>185</y><w>200</w><h>150</h></coordinates><panel_attributes>StoreFront
+-_productKey: String
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>396</x><y>458</y><w>40</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>14;90;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>386</x><y>711</y><w>30</w><h>190</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>396</x><y>851</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>86</x><y>578</y><w>250</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>230;13;140;10;140;150;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>86</x><y>718</y><w>30</w><h>210</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;190;10;10</additional_attributes></element><element><id>Text</id><coordinates><x>226</x><y>588</y><w>100</w><h>40</h></coordinates><panel_attributes>-_transactions
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>106</x><y>871</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>336</x><y>681</y><w>70</w><h>30</h></coordinates><panel_attributes>-_clients
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>516</x><y>130</y><w>200</w><h>150</h></coordinates><panel_attributes>StoreFront
 --
 -_filename: String
 --
@@ -149,36 +150,31 @@ style=wordwrap</panel_attributes><additional_attributes></additional_attributes>
 +lookupLowerPrices(priceLimit: int): String
 
 +showBalance(): String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>630</x><y>673</y><w>100</w><h>30</h></coordinates><panel_attributes>-_products
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>575</x><y>485</y><w>100</w><h>40</h></coordinates><panel_attributes>«Interface»
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>546</x><y>618</y><w>100</w><h>30</h></coordinates><panel_attributes>-_products
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>491</x><y>460</y><w>100</w><h>40</h></coordinates><panel_attributes>«Interface»
 /Serializable/
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>605</x><y>515</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Text</id><coordinates><x>350</x><y>1055</y><w>100</w><h>50</h></coordinates><panel_attributes>-_transactions
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>521</x><y>490</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;60</additional_attributes></element><element><id>Text</id><coordinates><x>256</x><y>990</y><w>100</w><h>50</h></coordinates><panel_attributes>-_transactions
 
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>352</x><y>855</y><w>110</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>92;81;90;10;12;10</additional_attributes></element><element><id>Text</id><coordinates><x>414</x><y>916</y><w>30</w><h>30</h></coordinates><panel_attributes>1
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>360</x><y>843</y><w>80</w><h>30</h></coordinates><panel_attributes>-_client
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>540</x><y>254</y><w>80</w><h>370</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;350;10;10;60;10</additional_attributes></element><element><id>Text</id><coordinates><x>540</x><y>233</y><w>90</w><h>30</h></coordinates><panel_attributes>-_store
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>350</x><y>893</y><w>100</w><h>170</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;150;80;150</additional_attributes></element><element><id>Text</id><coordinates><x>800</x><y>985</y><w>220</w><h>100</h></coordinates><panel_attributes>D:
-Interfaces?
-Comparators?
-REPRESENTACAO DE LISTAS?
-
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>370</x><y>896</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>533</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>20;120;14;10</additional_attributes></element><element><id>Text</id><coordinates><x>204</x><y>546</y><w>100</w><h>30</h></coordinates><panel_attributes>-_transactions
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>200</x><y>616</y><w>30</w><h>30</h></coordinates><panel_attributes>*
-style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>185</y><w>260</w><h>80</h></coordinates><panel_attributes>BadEntryException
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>268</x><y>800</y><w>110</w><h>110</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>92;81;90;10;12;10</additional_attributes></element><element><id>Text</id><coordinates><x>330</x><y>861</y><w>30</w><h>30</h></coordinates><panel_attributes>1
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>276</x><y>788</y><w>80</w><h>30</h></coordinates><panel_attributes>-_client
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>456</x><y>199</y><w>80</w><h>370</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;350;10;10;60;10</additional_attributes></element><element><id>Text</id><coordinates><x>456</x><y>178</y><w>90</w><h>30</h></coordinates><panel_attributes>-_store
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>266</x><y>838</y><w>100</w><h>170</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;150;80;150</additional_attributes></element><element><id>Text</id><coordinates><x>286</x><y>841</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>96</x><y>478</y><w>40</w><h>140</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;120;14;10</additional_attributes></element><element><id>Text</id><coordinates><x>120</x><y>491</y><w>100</w><h>30</h></coordinates><panel_attributes>-_transactions
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>116</x><y>561</y><w>30</w><h>30</h></coordinates><panel_attributes>*
+style=wordwrap</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1096</x><y>630</y><w>260</w><h>70</h></coordinates><panel_attributes>BadEntryException
 --
 _-serialVersionUID: long = 201409301048L_
 -_entrySpecification: String
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1280</x><y>185</y><w>240</w><h>80</h></coordinates><panel_attributes>ImportFileException
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1096</x><y>770</y><w>260</w><h>60</h></coordinates><panel_attributes>ImportFileException
 --
 _-serialVersionUID: long = 201708301010L_
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1010</x><y>285</y><w>260</w><h>80</h></coordinates><panel_attributes>MissingFileAssociationException
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1096</x><y>710</y><w>260</w><h>50</h></coordinates><panel_attributes>MissingFileAssociationException
 --
 _-serialVersionUID: long = 201708301010L_
 
-</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1280</x><y>285</y><w>240</w><h>80</h></coordinates><panel_attributes>UnavailableFileException
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1096</x><y>840</y><w>260</w><h>70</h></coordinates><panel_attributes>UnavailableFileException
 --
 _-serialVersionUID: long = 202009192006L_
 _filename: String
-</panel_attributes><additional_attributes></additional_attributes></element></diagram>
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>516</x><y>670</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=()-</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>Relation</id><coordinates><x>386</x><y>658</y><w>40</w><h>230</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes><additional_attributes>14;10;10;210</additional_attributes></element><element><id>Relation</id><coordinates><x>180</x><y>587</y><w>860</w><h>530</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>800;10;840;10;840;340;450;340;450;510;10;510;10;450</additional_attributes></element></diagram>
