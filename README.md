@@ -1,6 +1,6 @@
 # PO-20-21
 
-IST - Projeto de Programação de Objetos - 20/21 LEIC-A
+_IST - Projeto de Programação de Objetos - 20/21 LEIC-A_
 
 Visão global do projeto
 O objetivo final do projeto é desenvolver 
