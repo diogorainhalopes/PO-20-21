@@ -1,6 +1,6 @@
-# PO-20-21
+# Projeto da UC Programação de Objetos - 20/21
 
-_IST - Projeto de Programação de Objetos - 20/21 LEIC-A_
+Grade: 18.13
 
 Visão global do projeto
 O objetivo final do projeto é desenvolver 
